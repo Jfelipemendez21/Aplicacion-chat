@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "build": "npm run build"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
