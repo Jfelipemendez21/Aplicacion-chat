@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node ./server/index.js",
     "dev": "nodemon ./server/index.js",
-    "build": "react-scripts build"
+    "build": "./client/node_modules/react-scripts build"
   },
   "keywords": [],
   "author": "",
