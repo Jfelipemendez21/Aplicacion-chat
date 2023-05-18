@@ -2,10 +2,10 @@ import './App.css';
 import io from "socket.io-client"
 import axios from "axios"
 import { useState, useEffect } from 'react';
-import { port } from '../../server/config';
+import { port } from "./config"; 
 // Conexion para escuchar y enviar los eventos 
 
-const socket= io('https://servidor-aplicacion-chat.vercel.app'+port);
+const socket= io('https://servidor-aplicacion-chat.vercel.app:'+port);
 
 function App() {  
   
@@ -18,7 +18,7 @@ function App() {
   const [storeMessages, setStoreMessages] = useState([])
   const [firstTime, setFirstTime] = useState(false); 
   
-  const url="https://servidor-aplicacion-chat.vercel.app"+port+"/api/";
+  const url="https://servidor-aplicacion-chat.vercel.app:"+port+"/api/";
   
 
   useEffect(() => {
