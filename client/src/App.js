@@ -110,7 +110,7 @@ function App() {
                 <div key={index} className={`d-flex p-3 ${message.from==="Yo" ? "justify-content-end" : "justify-content-start"}`}>
                   <div className={`card mb-3 border-1 ${message.from==="Yo" ? "bg-primary bg-opacity-25" : "bg-light"}`}>
                     <div className='card-body'>
-                      <small className='text-ligh'>{message.from}: {message.body}</small>
+                      <small className=''>{message.from}: {message.body}</small>
                     </div>
                   </div>
                 </div>
