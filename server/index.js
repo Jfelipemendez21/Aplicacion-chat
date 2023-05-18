@@ -55,7 +55,7 @@ app.use("/api", router)
 mongoose.connect(url, {useNewUrlParser: true}).then(()=>{
     console.log("Conexion a la base de datos realizada con exito");
     server.listen(port, ()=>{
-        console.log("Servidor ejecutandose en https://aplicacion-chat-c8hr.vercel.app/:", port);
+        console.log("Servidor ejecutandose en https://server-aplicacion-chat.vercel.app:", port);
     })
 })
 
