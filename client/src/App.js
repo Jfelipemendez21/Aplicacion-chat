@@ -110,7 +110,7 @@ function App() {
                 <div key={index} className={`d-flex p-3 ${message.from==="Yo" ? "justify-content-end" : "justify-content-start"}`}>
                   <div className={`card mb-3 border-1 ${message.from==="Yo" ? "bg-primary bg-opacity-25" : "bg-light"}`}>
                     <div className='card-body'>
-                      <small className=''>{message.from}: {message.body}</small>
+                      <small className='text-ligh'>{message.from}: {message.body}</small>
                     </div>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ function App() {
                   <div key={index} className={`d-flex p-3 ${message.from===nickname ? "justify-content-end" : "justify-content-start"}`}>
                     <div className={`card mb-3 border-1 ${message.from===nickname ? "bg-success bg-opacity-25" : "bg-light"}`}>
                       <div className='card-body'>
-                        <small className='text-muted text-light'>{message.from}: {message.message}</small>
+                        <small className='text-muted'>{message.from}: {message.message}</small>
                       </div>
                     </div>
                   </div>
