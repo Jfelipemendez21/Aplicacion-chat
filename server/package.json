@@ -5,10 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node ./server/index.js",
-    "dev": "nodemon ./server/index.js",
-    "build": "react-scripts build",
-    "const": "npm run build"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "npm run build"
   },
   "keywords": [],
   "author": "",
