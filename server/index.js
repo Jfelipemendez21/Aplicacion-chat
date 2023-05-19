@@ -7,7 +7,7 @@ import cors from "cors"
 import mongoose from "mongoose"
 import { port } from "..config/"
 import bodyParser from "body-parser"
-import router from "./routes/messages.js"
+import router from "./routes/messages"
 
 
 // Mongoose 
