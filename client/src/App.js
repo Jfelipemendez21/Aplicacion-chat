@@ -2,9 +2,9 @@ import './App.css';
 import io from "socket.io-client"
 import axios from "axios"
 import { useState, useEffect } from 'react';
-import { port } from "../../config.js"; 
 // Conexion para escuchar y enviar los eventos 
 
+const port = process.env.PORT || 3000; 
 const socket= io('https://servidor-aplicacion-chat.vercel.app:'+port);
 
 function App() {  
@@ -34,7 +34,7 @@ function App() {
   }, [messages])
 
   // Este if verfica si es 
-  if(!firstTime){
+  if(firstTime){
     axios.get(url + "messages").then(res =>{
       setStoreMessages(res.data.mess);
     })
