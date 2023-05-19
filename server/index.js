@@ -5,9 +5,9 @@ import morgan from "morgan"
 import {Server as Socketserver} from "socket.io"
 import cors from "cors"
 import mongoose from "mongoose"
-import { port } from "..config/"
+import { port } from "../config"
 import bodyParser from "body-parser"
-import router from "./routes/messages"
+import router from "./routes/messages.js"
 
 
 // Mongoose 

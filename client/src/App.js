@@ -2,7 +2,7 @@ import './App.css';
 import io from "socket.io-client"
 import axios from "axios"
 import { useState, useEffect } from 'react';
-import { port } from "../../config"; 
+import { port } from "../../config.js"; 
 // Conexion para escuchar y enviar los eventos 
 
 const socket= io('https://servidor-aplicacion-chat.vercel.app:'+port);
