@@ -5,7 +5,7 @@ import morgan from "morgan"
 import {Server as Socketserver} from "socket.io"
 import cors from "cors"
 import mongoose from "mongoose"
-import { port } from "./config.js"
+import { port } from "../config.js"
 import bodyParser from "body-parser"
 import router from "./routes/messages.js"
 
@@ -55,7 +55,7 @@ app.use("/api", router)
 mongoose.connect(url, {useNewUrlParser: true}).then(()=>{
     console.log("Conexion a la base de datos realizada con exito");
     server.listen(port, ()=>{
-        console.log("Servidor ejecutandose en https://servidor-aplicacion-chat.vercel.app", port);
+        console.log("Servidor ejecutandose en https://servidor-aplicacion-chat.vercel.app:", port);
     })
 })
 
